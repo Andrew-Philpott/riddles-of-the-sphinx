@@ -11,7 +11,7 @@ namespace RiddlesOfTheSphinx {
 
     public Riddle ReturnARandomRiddle() {
       Random rnd = new Random();
-      int randomRiddleNumber = rnd.Next(riddles.Count);
+      int randomRiddleNumber = rnd.Next(0, riddles.Count);
       Riddle randomRiddle = riddles[randomRiddleNumber];
       return randomRiddle;
     }
